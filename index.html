@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Грузоперевозки автобусом Москва — Пятигорск. Расписание, расчёт стоимости и онлайн-помощник.">
+  <title>Москва — Пятигорск | Грузоперевозки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">МП</span><span>МАРШРУТ <small>МОСКВА — ПЯТИГОРСК</small></span></a>
+    <nav><a href="#services">Услуги</a><a href="#schedule">Расписание</a><a href="#calculator">Расчёт стоимости</a><a href="#contacts">Контакты</a></nav>
+    <a class="header-cta" href="#assistant">Спросить диспетчера <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> ГРУЗОПЕРЕВОЗКИ АВТОБУСОМ</div>
+        <h1>Передайте груз.<br><em>Остальное — наша забота.</em></h1>
+        <p>Перевозка посылок и небольших грузов по маршруту Москва — Пятигорск. Узнайте условия, расписание и стоимость онлайн.</p>
+        <div class="hero-actions"><a class="btn primary" href="#calculator">Рассчитать стоимость <span>→</span></a><a class="btn ghost" href="#schedule">Посмотреть расписание</a></div>
+        <div class="hero-note"><span class="check">✓</span> Онлайн-помощник отвечает на частые вопросы 24/7</div>
+      </div>
+      <div class="route-card">
+        <div class="route-top"><span>НАПРАВЛЕНИЕ</span><span class="route-live"><i></i> МАРШРУТ</span></div>
+        <div class="route-cities"><div><b>МСК</b><strong>Москва</strong><small>Пункт отправления</small></div><div class="route-line"><span>✦</span></div><div><b>ПЯТ</b><strong>Пятигорск</strong><small>Пункт прибытия</small></div></div>
+        <div class="route-map"><div class="map-grid"></div><svg viewBox="0 0 440 190" role="img" aria-label="Схематичная линия маршрута"><path d="M35 130 C95 20 150 165 220 88 S345 20 405 85" fill="none" stroke="#9dbbd0" stroke-width="3" stroke-dasharray="7 8"/><circle cx="35" cy="130" r="8" fill="#e6a65c"/><circle cx="405" cy="85" r="8" fill="#e6a65c"/><circle cx="220" cy="88" r="5" fill="#fff"/></svg><span class="map-label start">МОСКВА</span><span class="map-label end">ПЯТИГОРСК</span></div>
+        <div class="route-foot"><span>Один маршрут</span><span>Уточняйте ближайший рейс у диспетчера</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div><b>01</b><span>Узнайте расписание<br>и время прибытия</span></div><div><b>02</b><span>Рассчитайте стоимость<br>по параметрам груза</span></div><div><b>03</b><span>Задайте вопрос<br>онлайн-диспетчеру</span></div></section>
+
+    <section class="section" id="services">
+      <div class="section-heading"><div><div class="eyebrow">ЧЕМ МЫ ПОМОЖЕМ</div><h2>Всё важное — <em>под рукой</em></h2></div><p>Не нужно каждый раз звонить и ждать ответа. Начните с нужного раздела или задайте вопрос помощнику.</p></div>
+      <div class="service-grid">
+        <a class="service-card" href="#schedule"><span class="service-icon">◷</span><h3>Расписание рейсов</h3><p>Даты и время отправления, ориентировочное прибытие.</p><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#calculator"><span class="service-icon">▦</span><h3>Стоимость перевозки</h3><p>Учитываем вес и габариты вашего груза.</p><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#assistant"><span class="service-icon">✳</span><h3>ИИ-диспетчер</h3><p>Ответы на вопросы в любое время суток.</p><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="schedule-section" id="schedule">
+      <div class="section-heading"><div><div class="eyebrow">ПЛАНИРУЙТЕ ОТПРАВКУ</div><h2>Расписание <em>автобуса</em></h2></div><p>Данные ниже — демонстрационные. Перед публикацией замените их на актуальное расписание компании.</p></div>
+      <div class="schedule-panel"><div class="schedule-route"><span>МОСКВА</span><div class="schedule-track">────────── <i>→</i> ──────────</div><span>ПЯТИГОРСК</span></div><div class="schedule-data"><div><small>ОТПРАВЛЕНИЕ</small><strong id="departure">Уточняется</strong></div><div><small>ПРИБЫТИЕ</small><strong id="arrival">Уточняется</strong></div><div><small>СТАТУС</small><strong class="status">Проверьте у диспетчера</strong></div></div><p class="fineprint">Время прибытия ориентировочное и может меняться из-за дорожной ситуации. Точное время уточняйте перед отправкой.</p></div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+      <div class="calculator-intro"><div class="eyebrow">БЫСТРЫЙ РАСЧЁТ</div><h2>Сколько будет стоить <em>перевозка?</em></h2><p>Укажите примерные размеры и вес. Калькулятор использует тарифы, которые владелец сайта задаст в файле <code>config.js</code>.</p><div class="calc-tip">ⓘ Если тарифы ещё не настроены, сайт не будет придумывать цену — предложит уточнить её у диспетчера.</div></div>
+      <form class="calculator" id="price-form">
+        <label>Вес груза, кг<input type="number" id="weight" min="0.1" step="0.1" placeholder="Например, 5" required></label>
+        <div class="dimensions"><label>Длина, см<input type="number" id="length" min="1" placeholder="40" required></label><label>Ширина, см<input type="number" id="width" min="1" placeholder="30" required></label><label>Высота, см<input type="number" id="height" min="1" placeholder="20" required></label></div>
+        <button class="btn primary full" type="submit">Рассчитать стоимость <span>→</span></button>
+        <div class="calc-result" id="calc-result" aria-live="polite">Введите параметры груза, чтобы проверить стоимость.</div>
+      </form>
+    </section>
+
+    <section class="assistant-section" id="assistant">
+      <div class="assistant-copy"><div class="eyebrow">ОНЛАЙН 24/7</div><h2>Ваш виртуальный <em>диспетчер</em></h2><p>Спросите о маршруте, отправлении, прибытии, стоимости или правилах передачи груза. В демо-версии доступны примеры ответов; для реального ИИ подключите сервер и модель.</p><div class="assistant-features"><span>✓ Отвечает на частые вопросы</span><span>✓ Не показывает выдуманные цены</span><span>✓ Может передать вопрос сотруднику</span></div></div>
+      <div class="chat-window">
+        <div class="chat-head"><div class="bot-avatar">✳</div><div><b>ИИ-диспетчер</b><small><i></i> Онлайн-помощник</small></div><span class="chat-dots">•••</span></div>
+        <div class="chat-messages" id="chat-messages"><div class="message bot">Здравствуйте! Я виртуальный диспетчер маршрута Москва — Пятигорск. Что хотите узнать?</div><div class="quick-questions"><button data-question="Когда ближайший автобус?">Когда автобус?</button><button data-question="Сколько стоит перевозка?">Стоимость груза</button><button data-question="Как передать посылку?">Как отправить?</button></div></div>
+        <form class="chat-input" id="chat-form"><input id="chat-text" placeholder="Напишите ваш вопрос..." autocomplete="off" aria-label="Ваш вопрос"><button aria-label="Отправить сообщение">↑</button></form>
+        <div class="chat-disclaimer">Демонстрационный чат. Подключите ИИ-сервер для ответов по вашим данным.</div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts"><div><div class="eyebrow">ОСТАЛИСЬ ВОПРОСЫ?</div><h2>Свяжитесь <em>с диспетчером</em></h2><p>Добавьте сюда телефон, адрес склада и часы приёма отправлений.</p></div><div class="contact-details"><div><small>ТЕЛЕФОН</small><strong>+7 (XXX) XXX-XX-XX</strong></div><div><small>АДРЕС СКЛАДА</small><strong>Укажите адрес склада</strong></div><div><small>ЧАСЫ РАБОТЫ</small><strong>Укажите график работы</strong></div></div></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">МП</span><span>МАРШРУТ <small>МОСКВА — ПЯТИГОРСК</small></span></a><span>© <span id="year"></span> Грузоперевозки. Информация уточняется у диспетчера.</span></footer>
+  <script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
